@@ -8,11 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet">
     <style>
+      .container{
+        overflow:auto;
+        scroll-snap-type:y mandatory;
+        height:55vh;
+      }
       .top{
         background-image:url(bgimg_orange.png);
         background-repeat:no-repeeat;
         background-position:center center;
         margin-top:30px;
+      }
+      .second{
+        background-color:lime;
       }
       .practice{
         font-family:"BBH Bartle";
@@ -23,27 +31,29 @@
       }
       @media(max-width:1100px){
         section{
-          font-size:2rem;
-        }
-        .top{
-          height:35vh;
+          font-size:3rem;
+          height:55vh;
         }
       }
       @media(min-width:1100px){
         section{
           font-size:4rem;
-        }
-        .top{
-          height:40vh;
+          height:72vh;
         }
       }
     </style>
   </head>
   <body>
-    <section class="top">
-      <h1 class="practice"><center>practice</center></h1>
-      <p><center>This is test page for practicing writing code.</center></p>
-      <p class="small">I offer you technical tools and codes of system.</p>
-    </section>
+    <div class="container">
+      <section class="top">
+        <h1 class="practice"><center>practice</center></h1>
+        <p><center>This is test page for practicing writing code.</center></p>
+        <p class="small">I offer you technical tools and codes of system.</p>
+      </section>
+      <section class="second">
+        <h1 class="practice">You get</h1>
+        <p>choose own tools</p>
+      </section>
+    </div>
   </body>
 </html>
