@@ -73,18 +73,27 @@
         font-size:20px;
         font-family:sans-serif;
       }
-      .phys{
+      .phys_h{
+        font-size:50px;
+        font-family:"sans-serif";
+        text-decoration:none;
+      }
+      .phys_h:hover{
+        font-size:55px;
+        background:linear-gradient(transparent 70%,deepskyblue 70%);
+      }
+      .phys_b{
         color:white;
         background-color:deepskyblue;
         text-decoration:none;
-        border-radius:5px;
+        border-radius:8px;
         display:inline-block;
         font-family:sans-serif;
         top:-2px;
         box-shadow:0 5px #1e90ff;
         padding:10px 20px;
       }
-      .phys:hover{
+      .phys_b:hover{
         background-color:lightskyblue;
         box-shadow:0 1px deepskyblue;
         top:1px;
@@ -110,7 +119,10 @@
     </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <a class="phys_h" href="https://12octoo.github.io/practice/index.html">Physic</a>
+      <a style="font-family:sans-serif">Math</a>
+    </header>
     <div class="container">
       <section class="top">
         <h1><center>practice</center></h1>
@@ -120,7 +132,7 @@
       <section class="second">
         <h1>You Get</h1>
         <p id="mono">you can choose my own tools</p>
-        <a class="phys" href="https://12octoo.github.io/practice/phys.html">Physics</a>
+        <a class="phys_b" href="https://12octoo.github.io/practice/phys.html">Physics</a>
       </section>
       <section class="third">
         <h1 id="another">Another One</h1>
